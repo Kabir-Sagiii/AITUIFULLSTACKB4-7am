@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+}
+header {
+  background-color: black;
+  height: 70px;
+  text-align: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 50px;
+  line-height: 70px;
+}
