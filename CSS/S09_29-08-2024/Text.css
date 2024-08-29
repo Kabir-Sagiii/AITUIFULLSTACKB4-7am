@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+}
+h2 {
+  text-shadow: 0px 0px 10px red;
+}
+#text {
+  color: red;
+  text-transform: capitalize;
+  word-spacing: 50px;
+  letter-spacing: 10px;
+}
+#indent {
+  text-indent: 100px;
+}
