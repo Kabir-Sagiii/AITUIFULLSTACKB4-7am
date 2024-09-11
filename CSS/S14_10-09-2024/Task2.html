@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+      }
+      .gridContainer {
+        width: 1100px;
+        height: 500px;
+
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px;
+        gap: 13px;
+      }
+      .c1 {
+        grid-column: 1/3;
+        grid-row: 1/3;
+        background-image: url("https://th.bing.com/th/id/OIP.4n1c9e2qjMrynEdlsSWuTQHaEo?rs=1&pid=ImgDetMain");
+      }
+      .c2 {
+        background-image: url("https://thumbs.dreamstime.com/b/cute-little-girl-shopping-portrait-kid-shopping-bags-shopping-girl-cute-little-girl-shopping-portrait-kid-154061452.jpg");
+        grid-column: 3 / 4;
+        grid-row: 2/3;
+      }
+      .c3 {
+        background-image: url("https://www.retaildoc.com/hubfs/Downtown-1.webp");
+        grid-column: 3/4;
+        grid-row: 1/2;
+      }
+      .gridContainer div {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+      }
+      .gridContainer div div {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .gridContainer div div h1 {
+        font-size: 52px;
+        margin-bottom: 13px;
+      }
+      p {
+        width: 90%;
+        text-align: center;
+        margin: 10px;
+      }
+      button {
+        margin-top: 13px;
+        padding: 12px 30px;
+        border: none;
+        background-color: yellow;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="gridContainer">
+      <div class="c1">
+        <div>
+          <h1>Trending Shopping</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, esse
+            iste sed officia modi exercitationem saepe, odio aliquam at
+            doloremque, voluptates ratione quia temporibus nisi commodi enim
+            dignissimos quae natus. doloremque, voluptates ratione quia
+            temporibus nisi commodi enim dignissimos quae natus.
+          </p>
+          <button>Show Now</button>
+        </div>
+      </div>
+      <div class="c2"><div>2</div></div>
+      <div class="c3"><div>3</div></div>
+    </div>
+  </body>
+</html>
