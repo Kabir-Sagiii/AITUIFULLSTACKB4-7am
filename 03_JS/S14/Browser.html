@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fnNamed() {
+        console.log(this);
+      }
+      //   fnNamed();
+
+      const fn = () => {
+        console.log(this);
+      };
+
+      //   fn();
+
+      var obj1 = {
+        name: "Sagar",
+
+        fn: function f1() {
+          console.log(this);
+        },
+
+        fnArrow: () => {
+          console.log(this);
+        },
+      };
+
+      obj1.fn();
+      obj1.fnArrow();
+    </script>
+  </head>
+  <body></body>
+</html>
