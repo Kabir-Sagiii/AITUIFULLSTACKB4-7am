@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Object Model</title>
+    <script>
+      function changeDOMH2Element() {
+        // var h2DomElement = document.querySelector("h2");
+        var h2DomElement = document.querySelector("#title");
+        var pDomElement = document.querySelector("p");
+        var buttonDomelement = document.querySelector(".btn");
+
+        h2DomElement.innerText = "Dom Manipulation";
+        pDomElement.innerText =
+          "This my first example on DOM Manipulation, we have manipulated DOM using JS";
+
+        buttonDomelement.innerText = "Dom Manipulated";
+        for (let x in pDomElement) {
+          console.log(x);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="title">Document Object Model</h2>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam vel
+      quidem dignissimos a nostrum deleniti tempora, ad architecto unde rem
+      sapiente neque excepturi voluptas corrupti est quasi doloribus enim
+      perferendis voluptate adipisci? Dolorum deserunt hic eius, natus porro,
+      maiores laboriosam culpa necessitatibus repellendus quaerat eos?
+      Cupiditate ducimus distinctio rem a aliquam vel fuga minus, cum
+      repudiandae consectetur repellendus quibusdam sequi laudantium aperiam
+      excepturi nobis iusto quae sed quod assumenda? Et sit eos corporis quidem.
+      Excepturi quidem magnam error aspernatur minima maiores nihil porro, vel
+      quia assumenda exercitationem dignissimos labore optio incidunt, quibusdam
+      esse. Laudantium dicta sapiente nisi sit atque iste.
+    </p>
+    <button class="btn" onclick="changeDOMH2Element()">Change DOM</button>
+  </body>
+</html>
