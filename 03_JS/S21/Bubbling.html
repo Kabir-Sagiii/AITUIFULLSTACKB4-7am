@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .parent {
+        width: 500px;
+        height: 400px;
+        padding: 20px;
+        border: 4px solid red;
+      }
+      .child {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border: 2px solid green;
+      }
+    </style>
+    <script>
+      function fnButton(event) {
+        event.stopPropagation();
+        alert("button is clicked");
+      }
+
+      function fnChild(event) {
+        event.stopPropagation();
+        alert("fnChild is called");
+      }
+
+      function fnParent(event) {
+        event.stopPropagation();
+        alert("fnParent is called");
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="parent" onclick="fnParent(event)">
+      <div class="child" onclick="fnChild(event)">
+        <button onclick="fnButton(event)">Submit Button</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function fnCreateDom() {
+        var pDomElement = document.createElement("p");
+        pDomElement.innerText = "This is my first Dynamic P Element";
+
+        var imageDomElement = document.createElement("img");
+        imageDomElement.width = "500";
+        imageDomElement.height = "300";
+        imageDomElement.src =
+          "https://th.bing.com/th/id/OIP.hdTbkUGwBtEeKGomBvLLYgAAAA?rs=1&pid=ImgDetMain";
+
+        var bodyDomElement = document.querySelector("body");
+        bodyDomElement.appendChild(pDomElement);
+        bodyDomElement.appendChild(imageDomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Create New DOM Element</h2>
+    <button onclick="fnCreateDom()">Create DOM</button>
+  </body>
+</html>

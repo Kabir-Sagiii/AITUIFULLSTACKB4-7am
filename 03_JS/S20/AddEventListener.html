@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeButtonColor() {
+        document.getElementById("b2").style.color = "red";
+      }
+      function AddEvents() {
+        var b2DomElement = document.getElementById("b2");
+        b2DomElement.addEventListener("click", function () {
+          document.querySelector("h2").style.color = "coral";
+        });
+
+        b2DomElement.addEventListener("mouseenter", changeButtonColor);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Dynamic Events</h2>
+    <button onclick="AddEvents()">With Event</button>
+    <button id="b2">Without Event</button>
+  </body>
+</html>

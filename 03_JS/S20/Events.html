@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeStyle(e) {
+        var pDom = e.target;
+        pDom.style.color = "red";
+      }
+
+      function defaultStyle() {
+        var pDom = document.querySelector("p");
+        pDom.style.color = "black";
+      }
+
+      function addBg() {
+        var pDom = document.querySelector("p");
+        pDom.style.backgroundColor = "green";
+        pDom.style.padding = "20px";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Events</h2>
+    <p
+      onclick="addBg()"
+      onmouseenter="changeStyle(event)"
+      onmouseleave="defaultStyle()"
+    >
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem iusto
+      inventore deleniti magnam. Doloremque natus corporis veniam eos animi
+      dolorem nisi vero numquam necessitatibus laudantium quia assumenda beatae,
+      iste doloribus, distinctio saepe ea porro vitae expedita maiores eum?
+      Voluptate ea consequatur unde! Laborum molestiae, repudiandae recusandae
+      quo iure eveniet soluta voluptatum quaerat quae est sit, a doloremque
+      dolores. Facere iure voluptatum quia sapiente quaerat fugit nisi
+      quibusdam, atque cumque, aliquid in repellat ipsa doloribus itaque ad
+      nostrum veritatis earum sint! Sapiente recusandae voluptatem voluptate
+      odio dignissimos soluta suscipit nobis est, vel, exercitationem incidunt
+      laborum repellendus dicta quibusdam corporis. Unde, minima?
+    </p>
+  </body>
+</html>

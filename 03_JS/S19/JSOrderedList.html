@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createOrderedList() {
+        var ol = document.createElement("ol");
+
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+        var li4 = document.createElement("li");
+
+        li1.innerText = "Raj";
+        li2.innerText = "Yash";
+        li3.innerText = "Shiva";
+        li4.innerText = "Riya";
+
+        ol.appendChild(li1);
+        ol.appendChild(li2);
+        ol.appendChild(li3);
+        ol.appendChild(li4);
+
+        var bodyDOM = document.querySelector("body");
+        bodyDOM.appendChild(ol);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Ordered List in Javascript</h2>
+    <button onclick="createOrderedList()">Create Ordered List</button>
+  </body>
+</html>
